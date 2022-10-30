@@ -1,0 +1,344 @@
+<?xml version="1.0" ?>
+<robot name="carenv">
+
+<material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.7999999999999998 0.0 0.19999999999999996" rpy="0 0 0"/>
+    <mass value="32.673348995497264"/>
+    <inertia ixx="2.7327852960879753" iyy="0.02001242625974342" izz="2.732785296087979" ixy="1.5813857316970824e-15" iyz="-7.906928658485412e-16" ixz="8.881784197001252e-16"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="bl1">
+  <inertial>
+    <origin xyz="0.0 0.02499999999999991 -8.326672684688674e-17" rpy="0 0 0"/>
+    <mass value="3.6246121411945738"/>
+    <inertia ixx="0.044782987106522065" iyy="0.08805571915421684" izz="0.04478298710652595" ixy="0.0" iyz="0.0" ixz="1.1102230246251565e-16"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.8 0.5 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/bl1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.8 0.5 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/bl1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="br1">
+  <inertial>
+    <origin xyz="0.0 -0.025000000000000022 -8.326672684688674e-17" rpy="0 0 0"/>
+    <mass value="3.6246121411945738"/>
+    <inertia ixx="0.04478298710652229" iyy="0.08805571915421684" izz="0.04478298710652551" ixy="0.0" iyz="-5.551115123125783e-17" ixz="1.1102230246251565e-16"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.8 -0.5 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/br1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.8 -0.5 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/br1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="j11">
+  <inertial>
+    <origin xyz="0.16055339778671573 -3.887514700933762e-08 5.551115123125783e-17" rpy="0 0 0"/>
+    <mass value="8.49634453691667"/>
+    <inertia ixx="0.0068831522816594215" iyy="0.19178670589433677" izz="0.19149688772306295" ixy="-5.803203460294708e-09" iyz="-2.6469779601696886e-23" ixz="-4.440892098500626e-16"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.8 -0.0 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/j11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.8 -0.0 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/j11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="j21">
+  <inertial>
+    <origin xyz="0.2547657567768827 7.582384410019072e-17 2.7755575615628914e-17" rpy="0 0 0"/>
+    <mass value="7.772654812516621"/>
+    <inertia ixx="0.05643334857808685" iyy="0.10040470339408475" izz="0.09156811963248819" ixy="-3.058793446014534e-17" iyz="4.7148205339908604e-17" ixz="-8.326672684688674e-17"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.36 -0.0 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/j21.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.36 -0.0 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/j21.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="j31">
+  <inertial>
+    <origin xyz="0.06641306804789343 0.0 -0.09000000000000002" rpy="0 0 0"/>
+    <mass value="4.789513051054657"/>
+    <inertia ixx="0.008373824415166126" iyy="0.06254572119280657" izz="0.05890534413714747" ixy="-3.929017111659049e-18" iyz="0.0" ixz="-1.3877787807814457e-17"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04 -0.0 -0.29" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/j31.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.04 -0.0 -0.29" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/j31.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="j41">
+  <inertial>
+    <origin xyz="0.3558023685884428 -3.567366458009799e-08 7.391256051647588e-09" rpy="0 0 0"/>
+    <mass value="13.183187209531562"/>
+    <inertia ixx="0.009096034938043895" iyy="0.4668323356889301" izz="0.4664887547424632" ixy="-7.965513185466877e-09" iyz="1.9731946766217266e-09" ixz="-1.6777332412232226e-08"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.31 -0.0 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/j41.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.31 -0.0 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/j41.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="f_stand1">
+  <inertial>
+    <origin xyz="-1.1102230246251565e-16 0.05 -5.551115123125783e-17" rpy="0 0 0"/>
+    <mass value="32.673348995497264"/>
+    <inertia ixx="2.7327852960879753" iyy="0.02001242625974342" izz="2.7327852960879753" ixy="0.0" iyz="-7.906928658485412e-16" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.75 0.05 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/f_stand1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.75 0.05 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/f_stand1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rl1">
+  <inertial>
+    <origin xyz="0.0 0.02499999999999991 5.551115123125783e-17" rpy="0 0 0"/>
+    <mass value="3.624612141194572"/>
+    <inertia ixx="0.04478298710652173" iyy="0.0880557191542164" izz="0.04478298710652506" ixy="-2.220446049250313e-16" iyz="-5.551115123125783e-17" ixz="2.220446049250313e-16"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.75 0.5 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rl1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.75 0.5 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rl1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rr1">
+  <inertial>
+    <origin xyz="0.0 -0.02499999999999991 5.551115123125783e-17" rpy="0 0 0"/>
+    <mass value="3.624612141194572"/>
+    <inertia ixx="0.04478298710652173" iyy="0.0880557191542164" izz="0.04478298710652506" ixy="2.220446049250313e-16" iyz="1.1102230246251565e-16" ixz="2.220446049250313e-16"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.75 -0.5 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rr1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.75 -0.5 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rr1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cam1">
+  <inertial>
+    <origin xyz="0.010000000000000009 0.0 0.0" rpy="0 0 0"/>
+    <mass value="0.13499999999999998"/>
+    <inertia ixx="5.6249999999999876e-05" iyy="3.2624999999980586e-05" izz="3.26250000000361e-05" ixy="0.0" iyz="0.0" ixz="3.469446951953614e-18"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.99 -0.0 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/cam1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.99 -0.0 -0.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/cam1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="bl" type="fixed">
+  <origin xyz="-0.8 -0.5 0.2" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="bl1"/>
+</joint>
+
+<joint name="br" type="fixed">
+  <origin xyz="-0.8 0.5 0.2" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="br1"/>
+</joint>
+
+<joint name="base_wheel" type="continuous">
+  <origin xyz="-0.8 0.0 0.2" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="j11"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+<transmission name="base_wheel_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="base_wheel">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="base_wheel_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="j1" type="fixed">
+  <origin xyz="0.44 0.0 0.0" rpy="0 0 0"/>
+  <parent link="j11"/>
+  <child link="j21"/>
+</joint>
+
+<joint name="steering" type="revolute">
+  <origin xyz="0.32 0.0 0.09" rpy="0 0 0"/>
+  <parent link="j21"/>
+  <child link="j31"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+  <limit upper="0.785398" lower="-0.785398" effort="100" velocity="100"/>
+</joint>
+<transmission name="steering_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="steering">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="steering_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="j2" type="fixed">
+  <origin xyz="0.35 0.0 -0.09" rpy="0 0 0"/>
+  <parent link="j31"/>
+  <child link="j41"/>
+</joint>
+
+<joint name="front_whell" type="continuous">
+  <origin xyz="0.44 -0.05 0.0" rpy="0 0 0"/>
+  <parent link="j41"/>
+  <child link="f_stand1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+<transmission name="front_whell_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="front_whell">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="front_whell_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="fl" type="fixed">
+  <origin xyz="0.0 -0.45 0.0" rpy="0 0 0"/>
+  <parent link="f_stand1"/>
+  <child link="rl1"/>
+</joint>
+
+<joint name="fr" type="fixed">
+  <origin xyz="0.0 0.55 0.0" rpy="0 0 0"/>
+  <parent link="f_stand1"/>
+  <child link="rr1"/>
+</joint>
+
+<joint name="cam_sensor" type="fixed">
+  <origin xyz="0.68 0.0 0.0" rpy="0 0 0"/>
+  <parent link="j41"/>
+  <child link="cam1"/>
+</joint>
+
+</robot>
